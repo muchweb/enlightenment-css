@@ -1,0 +1,48 @@
+body {
+  background: black;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAAEhL4UpAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gsYFwIm/8/LFAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAwSURBVAjXBcHBDQAgCAPA6gRlBHxI2H+5mpDUO0TQOCeNzDRJo+p6Sw+ruy0JM4MPF38Q3IF5EtIAAAAASUVORK5CYII=');
+}
+section {
+  position: absolute;
+  margin-top: -200px;
+  margin-left: -150px;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 2px 8px 0 black;
+}
+section > header {
+  display: inline-block;
+  position: relative;
+  height: 23px;
+  width: 300px;
+  background: linear-gradient(to bottom, #606060 0%, #434242 100%);
+  box-shadow: 1px 0 0 0 #656665 inset, -1px 0 0 0 #656665 inset, 0 -1px 0 0 #313131 inset;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.2);
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  line-height: 23px;
+}
+section > header:before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 300px;
+  top: -1px;
+  left: 0px;
+  background: linear-gradient(to right, #878787 0%, #878787 0%, #878787 40%, #ffffff 50%, #878787 60%, #878787 100%, #878787 100%);
+}
+section > header:after {
+  position: absolute;
+  content: '❌';
+  top: 0px;
+  right: 8px;
+}
+section > div {
+  height: 180px;
+  background: #404040;
+  box-shadow: 1px 0 0 0 #494949 inset, -1px 0 0 0 #494949 inset, 0 1px 0 0 #494949 inset, 0 -1px 0 0 #313131 inset;
+}

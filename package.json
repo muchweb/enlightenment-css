@@ -1,0 +1,10 @@
+{
+  "name": "enlightenment-css",
+  "version": "0.0.0",
+  "repository": "https://github.com/muchweb/enlightenment-css",
+  "license": "GPL-3.0+",
+  "author": "muchweb <aleks@s-ko.net>",
+  "dependencies": {
+    "less": "^2.1.0"
+  }
+}
