@@ -2,47 +2,99 @@ body {
   background: black;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAAEhL4UpAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gsYFwIm/8/LFAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAwSURBVAjXBcHBDQAgCAPA6gRlBHxI2H+5mpDUO0TQOCeNzDRJo+p6Sw+ruy0JM4MPF38Q3IF5EtIAAAAASUVORK5CYII=');
 }
-section {
+.en-box-style {
+  box-shadow: 1px 0 0 0 #494949 inset, -1px 0 0 0 #494949 inset, 0 1px 0 0 #494949 inset, 0 -1px 0 0 #313131 inset;
+}
+.en-box-background {
+  background: linear-gradient(to bottom, #606060 0%, #434242 100%);
+}
+.en-window {
   position: absolute;
-  margin-top: -200px;
-  margin-left: -150px;
   top: 50%;
   left: 50%;
+  margin-top: -200px;
+  margin-left: -150px;
   box-shadow: 0 2px 8px 0 black;
 }
-section > header {
-  display: inline-block;
-  position: relative;
-  height: 23px;
-  width: 300px;
+.en-window > .en-header {
+  box-shadow: 1px 0 0 0 #494949 inset, -1px 0 0 0 #494949 inset, 0 1px 0 0 #494949 inset, 0 -1px 0 0 #313131 inset;
   background: linear-gradient(to bottom, #606060 0%, #434242 100%);
-  box-shadow: 1px 0 0 0 #656665 inset, -1px 0 0 0 #656665 inset, 0 -1px 0 0 #313131 inset;
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.2);
-  font-size: 11px;
-  text-align: center;
-  font-weight: bold;
   font-family: sans-serif;
+  font-size: 11px;
+  font-weight: bold;
   line-height: 23px;
-}
-section > header:before {
+  position: relative;
   display: inline-block;
-  position: absolute;
-  content: '';
-  height: 1px;
   width: 300px;
-  top: -1px;
-  left: 0px;
+  height: 23px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.en-window > .en-header:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 300px;
+  height: 1px;
+  content: '';
   background: linear-gradient(to right, #878787 0%, #878787 0%, #878787 40%, #ffffff 50%, #878787 60%, #878787 100%, #878787 100%);
 }
-section > header:after {
+.en-window > .en-header:after {
   position: absolute;
-  content: '❌';
-  top: 0px;
+  top: 0;
   right: 8px;
+  content: '❌';
 }
-section > div {
+.en-window > .en-contents {
+  position: relative;
   height: 180px;
-  background: #404040;
   box-shadow: 1px 0 0 0 #494949 inset, -1px 0 0 0 #494949 inset, 0 1px 0 0 #494949 inset, 0 -1px 0 0 #313131 inset;
+  background: #404040;
+}
+.en-window > .en-contents > .en-scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  height: 180px;
+  width: 14px;
+  box-shadow: 1px 0 0 0 #494949 inset, -1px 0 0 0 #494949 inset, 0 1px 0 0 #494949 inset, 0 -1px 0 0 #313131 inset;
+}
+.en-window > .en-contents > .en-scrollbar > .en-scrollbar-way {
+  background: black;
+  content: '';
+  width: 1px;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  bottom: 10px;
+  box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.05), 0 -1px 0 0 rgba(0, 0, 0, 0.05), 1px 0 0 0 rgba(255, 255, 255, 0.05), 0 1px 0 0 rgba(255, 255, 255, 0.05);
+}
+.en-window > .en-contents > .en-scrollbar > .en-scrollbar-handle {
+  position: absolute;
+  top: 20px;
+  width: 14px;
+  height: 80px;
+  box-shadow: 1px 0 0 0 #494949 inset, -1px 0 0 0 #494949 inset, 0 1px 0 0 #494949 inset, 0 -1px 0 0 #313131 inset;
+  background: linear-gradient(to bottom, #606060 0%, #434242 100%);
+  box-shadow: 0 1px 3px 0 black;
+}
+.en-window > .en-contents > .en-scrollbar > .en-scrollbar-handle:before {
+  background: linear-gradient(to top, #2b81d7 0%, transparent 100%);
+  content: '';
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+}
+.en-window > .en-contents > .en-scrollbar > .en-scrollbar-handle:after {
+  background: linear-gradient(to top, transparent 0%, #2b81d7 100%);
+  content: '';
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
 }
