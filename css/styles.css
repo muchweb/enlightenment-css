@@ -77,6 +77,12 @@ body {
   color: black;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
+.en-window > .en-contents > button:focus {
+  box-shadow: 0 0 4px 1px #316193;
+}
+.en-window > .en-contents > button:active {
+  background: #474747;
+}
 .en-window > .en-contents > .en-scrollbar {
   position: absolute;
   top: 0;
