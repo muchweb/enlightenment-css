@@ -19,6 +19,11 @@ body {
   margin-left: -150px;
   box-shadow: 0 2px 8px 0 black;
 }
+.en-window.en-window-active > .en-header {
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #2f2e2f 0%, #0d0d0d 100%);
+}
 .en-window > .en-header {
   box-shadow: 1px 0 0 0 #494949 inset, -1px 0 0 0 #494949 inset, 0 1px 0 0 #494949 inset, 0 -1px 0 0 #313131 inset;
   background: linear-gradient(to bottom, #606060 0%, #434242 100%);
@@ -55,6 +60,22 @@ body {
   height: 180px;
   box-shadow: 1px 0 0 0 #494949 inset, -1px 0 0 0 #494949 inset, 0 1px 0 0 #494949 inset, 0 -1px 0 0 #313131 inset;
   background: #404040;
+}
+.en-window > .en-contents > button {
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  font-size: 11px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background: linear-gradient(to bottom, #5f5e5f 0%, #444444 100%);
+  border: 0;
+  box-shadow: 0 1px 0 0 #878787 inset, 1px 0 0 0 #606060 inset, 0 -1px 0 0 #313131 inset, -1px 0 0 0 #606060 inset;
+  padding: 2px 6px;
+}
+.en-window > .en-contents > button:disabled {
+  color: black;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 .en-window > .en-contents > .en-scrollbar {
   position: absolute;
